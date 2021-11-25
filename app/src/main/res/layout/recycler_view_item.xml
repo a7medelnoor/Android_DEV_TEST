@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/RecyclerViewImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/RecyclerViewTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@id/RecyclerViewImageView"
+            app:layout_constraintTop_toBottomOf="@+id/RecyclerViewImageView"
+            app:layout_constraintVertical_bias="0.39999998" />
+
+        <RatingBar
+            android:id="@+id/RecyclerViewRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@id/RecyclerViewImageView"
+            app:layout_constraintTop_toBottomOf="@id/RecyclerViewImageView" />
+
+        <TextView
+            android:id="@+id/RecyclerViewDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView description TextView TextView description TextView"
+            app:layout_constraintStart_toStartOf="@+id/RecyclerViewTitleTextView"
+            app:layout_constraintTop_toBottomOf="@id/RecyclerViewTitleTextView" />
+
+        <TextView
+            android:id="@+id/RecyclerViewDeliveryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Delivery: 10 AED"
+            app:layout_constraintStart_toStartOf="@+id/RecyclerViewTitleTextView"
+            app:layout_constraintTop_toBottomOf="@id/RecyclerViewDescriptionTextView" />
+
+        <ImageView
+            android:id="@+id/RecyclerViewOfferImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_offer"
+            app:layout_constraintStart_toStartOf="@+id/RecyclerViewTitleTextView"
+            app:layout_constraintTop_toBottomOf="@id/RecyclerViewDeliveryTextView" />
+
+        <TextView
+            android:id="@+id/RecyclerViewTextViewOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Delivery: 10 AED"
+            app:layout_constraintRight_toRightOf="@id/RecyclerViewDeliveryTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/RecyclerViewDeliveryTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
